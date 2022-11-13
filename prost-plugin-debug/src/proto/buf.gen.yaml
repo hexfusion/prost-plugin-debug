@@ -1,0 +1,13 @@
+version: v1
+plugins:
+  - name: prost
+    out: pb
+    opt:
+      - bytes=.
+      - compile_well_known_types
+      - file_descriptor_set
+
+  - name: tonic
+    out: pb
+    opt:
+      - compile_well_known_types
